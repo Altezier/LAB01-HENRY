@@ -3,7 +3,7 @@ BY: Gian Pier, Pacheco Mateo
 
 > En este apartado describire un poco el proyecto y los files.
 
-[Video explicativo](https://youtu.be/rLUn2rhO37s)
+[Video de documentacion]()
 
 :red_circle: **MENU:** :red_circle:
 * **datasets/** - datasets que utilice en el proyecto.
