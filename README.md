@@ -1,9 +1,45 @@
 ## PROYECTO INDIVIDUAL - Machine Learning Operations
-BY: Gian Pier, Pacheco Mateo
+BY: Gian Pier, Pacheco Mateo (Altezier)
 
 > En este apartado describire un poco el proyecto y los files.
 
 [Video de documentacion]()
+
+### **Temática**
+
+Se empezo a trabajar como Data Scientist en una start-up que provee servicios de agregación de plataformas de streaming. El mundo es bello y vas a crear tu primer modelo de ML que soluciona un problema de negocio: un sistema de recomendación que aún no ha sido puesto en marcha!
+
+Vas a sus datos y te das cuenta que la madurez de los mismos es poca (ok, es nula 😭): Datos sin transformar, no hay procesos automatizados para la actualización de nuevas películas o series, entre otras cosas…. haciendo tu trabajo imposible 😩.
+
+Debes empezar desde 0, haciendo un trabajo rápido de Data Engineer y tener un MVP (Minimum Viable Product) para la próxima semana! Tu cabeza va a explotar 🤯, pero al menos sabes cual es, conceptualmente, el camino que debes de seguir ❗. Así que te espantas los miedos y te pones manos a la obra 💪
+
+Como segunda parte del requerimiento, se solicitaba elaborar una API a efectos de disponibilizar los datos de manera online, los cuales debían ser accedidos mediante cinco consultas predefinidas.
+
+Por último, se solicita documentar todo el proceso y el funcionamiento de la API, y efectuar un video que sería remitido al Tech Lead que nos encargó el proyecto para que nos efectúe un feedback sobre el mismo.
+
+### **Detalles del requerimiento**
+ **Transformaciones:**
+ 
+
+Generar campo id: Cada id se compondrá de la primera letra del nombre de la plataforma, seguido del show_id ya presente en los datasets (ejemplo para títulos de Amazon = as123)
+
+Los valores nulos del campo rating deberán reemplazarse por el string “G” (corresponde al maturity rating: “general for all audiences”
+
+De haber fechas, deberán tener el formato AAAA-mm-dd
+
+Los campos de texto deberán estar en minúsculas, sin excepciones
+
+El campo duration debe convertirse en dos campos: duration_int y duration_type. El primero será un integer y el segundo un string indicando la unidad de medición de duración: min (minutos) o season (temporadas)
+
+### **Herramientas utilizadas**
+
+-   **[Python](https://www.python.org/)**: lenguaje de programación utilizado, que brinda acceso a librerías apropiadas para realizar la tarea encomendada de manera eficaz y eficiente.
+-   **[Pandas](https://pandas.pydata.org/):** librería que nos permite el acceso a los archivos csv provistos, su conversión en dataframes, la transformación de los datos y la posterior exportación de los mismos en un único archivo, el cual luego será utilizado por la API para disponibilizar los datos.
+-   **[Pandasql](https://pypi.org/project/pandasql/):** librería que nos permite efectuar consultas con lenguaje SQL sobre Dataframes de Pandas.
+-   **[scikit-learn](https://scikit-learn.org/stable/index.html):**  libreria de python para el desarrollo de machine learning .
+-   **[FastApi](https://fastapi.tiangolo.com/):** framework para la construcción de la API en Python.
+-   **[Uvicorn](https://www.uvicorn.org/):** nos permite efectuar pruebas para controlar el funciomaniento de la API de manera local previa a su despliegue en Deta.
+-   **[DetaSpace](https://deta.space):**  evolucion de lo que anter era Deta, igualmente es una plataforma online y gratuita, que nos permite disponibilizar tanto la API como los datos para que puedan ser consultados por el usuario mediante su software.
 
 :red_circle: **MENU:** :red_circle:
 * **datasets/** - datasets que utilice en el proyecto.
