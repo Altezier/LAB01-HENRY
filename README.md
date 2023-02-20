@@ -37,6 +37,16 @@ El campo duration debe convertirse en dos campos: duration_int y duration_type. 
 -   **[Uvicorn](https://www.uvicorn.org/):** nos permite efectuar pruebas para controlar el funciomaniento de la API de manera local previa a su despliegue en Deta.
 -   **[DetaSpace](https://deta.space):**  evolucion de lo que anter era Deta, igualmente es una plataforma online y gratuita, que nos permite disponibilizar tanto la API como los datos para que puedan ser consultados por el usuario mediante su software.
 
+### **Consultas API:** 
+
+Película con mayor duración con filtros opcionales de AÑO, PLATAFORMA Y TIPO DE DURACIÓN. (la función debe llamarse get_max_duration(year, platform, duration_type))
+
+Cantidad de películas por plataforma con un puntaje mayor a XX en determinado año (la función debe llamarse get_score_count(platform, scored, year))
+
+Cantidad de películas por plataforma con filtro de PLATAFORMA. (La función debe llamarse get_count_platform(platform))
+
+Actor que más se repite según plataforma y año. (La función debe llamarse get_actor(platform, year))
+
 :red_circle: **MENU:** :red_circle:
 * **datasets/** - datasets que utilice en el proyecto.
 * **moviescores.csv** - el csv que se utiliza para las consultas.
