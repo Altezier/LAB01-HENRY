@@ -12,6 +12,7 @@ BY: Gian Pier, Pacheco Mateo
 * **querys** - notebook con las funciones del API probadas en local.
 * **ETL** - Exportación, transformación y carga precio del EDA y query's.
 * **EDA** - Análisis exploratorio de los datos.
+* **MLOPs** - Desarrollo del modelo predictivo.(considerar el tamaño del dataframe)
 * **README** - Pequeña descripción o intro del proyecto en cuestión.
 
 * **FastAPI/** - Carpeta contenedora de todo lo relacionado a la API.
