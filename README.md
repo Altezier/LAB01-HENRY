@@ -3,7 +3,9 @@ BY: Gian Pier, Pacheco Mateo (Altezier)
 
 > En este apartado describire un poco el proyecto y los files.
 
-[Video de documentacion]()
+[Video de documentacion](https://www.youtube.com/watch?v=6n7mPyiAe_4)
+[App en DetaSpace](https://deta.space/discovery/r/ikofw6nssp26cq6k)
+[deta_sets]:(https://drive.google.com/drive/folders/1b49OVFJpjPPA1noRBBi1hSmMThXmNzxn)
 
 ### **Temática**
 
