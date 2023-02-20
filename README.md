@@ -27,16 +27,6 @@ Los campos de texto deberán estar en minúsculas, sin excepciones
 
 El campo duration debe convertirse en dos campos: duration_int y duration_type. El primero será un integer y el segundo un string indicando la unidad de medición de duración: min (minutos) o season (temporadas)
 
-### **Herramientas utilizadas**
-
--   **[Python](https://www.python.org/)**: lenguaje de programación utilizado, que brinda acceso a librerías apropiadas para realizar la tarea encomendada de manera eficaz y eficiente.
--   **[Pandas](https://pandas.pydata.org/):** librería que nos permite el acceso a los archivos csv provistos, su conversión en dataframes, la transformación de los datos y la posterior exportación de los mismos en un único archivo, el cual luego será utilizado por la API para disponibilizar los datos.
--   **[Pandasql](https://pypi.org/project/pandasql/):** librería que nos permite efectuar consultas con lenguaje SQL sobre Dataframes de Pandas.
--   **[scikit-learn](https://scikit-learn.org/stable/index.html):**  libreria de python para el desarrollo de machine learning .
--   **[FastApi](https://fastapi.tiangolo.com/):** framework para la construcción de la API en Python.
--   **[Uvicorn](https://www.uvicorn.org/):** nos permite efectuar pruebas para controlar el funciomaniento de la API de manera local previa a su despliegue en Deta.
--   **[DetaSpace](https://deta.space):**  evolucion de lo que anter era Deta, igualmente es una plataforma online y gratuita, que nos permite disponibilizar tanto la API como los datos para que puedan ser consultados por el usuario mediante su software.
-
 ### **Consultas API:** 
 
 Película con mayor duración con filtros opcionales de AÑO, PLATAFORMA Y TIPO DE DURACIÓN. (la función debe llamarse get_max_duration(year, platform, duration_type))
@@ -46,6 +36,7 @@ Cantidad de películas por plataforma con un puntaje mayor a XX en determinado a
 Cantidad de películas por plataforma con filtro de PLATAFORMA. (La función debe llamarse get_count_platform(platform))
 
 Actor que más se repite según plataforma y año. (La función debe llamarse get_actor(platform, year))
+
 
 :red_circle: **MENU:** :red_circle:
 * **datasets/** - datasets que utilice en el proyecto.
@@ -74,3 +65,12 @@ Actor que más se repite según plataforma y año. (La función debe llamarse ge
 * Todo debe estar escrito en minúsculas.  <br>
 * Las plataformas que admite son: amazon, disney, hulu y netflix. <br>
 *  En caso de la query no arroje resultados, un mensaje explicativo se imprimirá en pantalla.<br>
+
+### **Herramientas utilizadas**
+-   **[Python](https://www.python.org/)**: lenguaje de programación utilizado, que brinda acceso a librerías apropiadas para realizar la tarea encomendada de manera eficaz y eficiente.
+-   **[Pandas](https://pandas.pydata.org/):** librería que nos permite el acceso a los archivos csv provistos, su conversión en dataframes, la transformación de los datos y la posterior exportación de los mismos en un único archivo, el cual luego será utilizado por la API para disponibilizar los datos.
+-   **[Pandasql](https://pypi.org/project/pandasql/):** librería que nos permite efectuar consultas con lenguaje SQL sobre Dataframes de Pandas.
+-   **[scikit-learn](https://scikit-learn.org/stable/index.html):**  libreria de python para el desarrollo de machine learning .
+-   **[FastApi](https://fastapi.tiangolo.com/):** framework para la construcción de la API en Python.
+-   **[Uvicorn](https://www.uvicorn.org/):** nos permite efectuar pruebas para controlar el funciomaniento de la API de manera local previa a su despliegue en Deta.
+-   **[DetaSpace](https://deta.space):**  evolucion de lo que anter era Deta, igualmente es una plataforma online y gratuita, que nos permite disponibilizar tanto la API como los datos para que puedan ser consultados por el usuario mediante su software.
